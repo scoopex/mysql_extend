@@ -10,3 +10,10 @@
 *.lai
 *.la
 *.a
+
+# Dependency files
+*.d
+
+# Binary
+mysql_extend
+

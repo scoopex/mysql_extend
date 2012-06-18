@@ -1,0 +1,14 @@
+-kr
+-l200
+-brf
+-cli4
+-nce
+-nsaf
+-nsai
+-nsaw
+-ts4
+-nut
+-i4
+-T MYSQL
+-T MYSQL_RES
+-T MYSQL_ROW
