@@ -6,9 +6,9 @@ mysql_extend
 Compile and Install
 -------------------
 Prerequisites:
-1. C-compiler
-2. GNU Make
-3. MySQL-Client libraries (dev)
+ * C-compiler
+ * GNU Make
+ * MySQL-Client libraries (dev)
 
 This will install the binary 'mysql_extend' to /etc/zabbix/externalscripts:
 ```
