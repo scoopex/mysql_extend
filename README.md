@@ -3,6 +3,26 @@ mysql_extend
 
 "MySQL-Monitoring-Proxy" for Zabbix
 
+This tool can be utilized to gather behavioral measurement data of MySQL servers in a efficient way. 
+For example it is used as an external check for the zabbix monitoring system.
+The benefit for using this tool is a very low overhead for gathering the measurements.
+
+MySQL Measurements:
+ * "SHOW GLOBAL VARIABLES"
+ * "SHOW GLOBAL STATUS"
+ * "SHOW SLAVE STATUS"
+
+What it does in general:
+ * On invocation the tool creates a lock which blocks all other running instances of this tool
+ * It searches for a shared memory segment which is used for caching measurement values
+   * If the segment does not exist a new segment is created by the tool
+   * A lookup is performed to find out if there are already cached values for the specified host
+   * If the stored measures are not older than 60 seconds the specified measure is provided to stdout and the program flow is terminated
+ * If the store values are older than 60 seconds or not stored values are available an database connection is established and the measurements listed above are executed
+   * The results are stored in the shared memory segment (if there are any) with the timestamp of the fetch
+   * If no results are available the old results remain in the shared memory segment
+ * End of program flow, release the lock to allow other instances of the tool to continue their work
+
 Compile and Install
 -------------------
 Prerequisites:
@@ -39,4 +59,15 @@ Data type..........: Decimal
 Update interval....: 300
 Store value........: Delta (simple change)
 ```
+
+Call the tool with parameters like this:
+```
+./mysql_extend -P 3306 -t 2 Binlog_cache_use foo.bar.de
+./mysql_extend --help
+```
+
+The directory "zabbix" contains a example zabbix monitoring template which measures and notifies.
+The template was created for zabbix release 1.8.
+Just import this template to you zabbix-server, assign hosts to this template and overload the macros of the
+template at host level.
 
