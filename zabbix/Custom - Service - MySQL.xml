@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<zabbix_export version="1.0" date="28.09.12" time="11.35">
+<zabbix_export version="1.0" date="22.10.12" time="19.09">
   <hosts>
     <host name="Custom - Service - MySQL">
       <proxy_hostid>0</proxy_hostid>
@@ -32,7 +32,7 @@
           <description>MySQL Service - Slave Seconds behind master (3h)</description>
           <type>0</type>
           <expression>{Custom - Service - MySQL:mysql_extend[Seconds_Behind_Master -P{$MYSQL_PORT}].last(0)}&gt;10800</expression>
-          <url></url>
+          <url>https://zabbix.intra.dmc.de/wiki/MySQLVorgehensweise</url>
           <status>0</status>
           <priority>3</priority>
           <comments>Slave is more than 3 hours behind master server.</comments>
@@ -41,7 +41,7 @@
           <description>MySQL Service - Slave Seconds behind master (1h)</description>
           <type>0</type>
           <expression>{Custom - Service - MySQL:mysql_extend[Seconds_Behind_Master -P{$MYSQL_PORT}].last(0)}&gt;3200</expression>
-          <url></url>
+          <url>https://zabbix.intra.dmc.de/wiki/MySQLVorgehensweise</url>
           <status>0</status>
           <priority>2</priority>
           <comments>Slave is more than one hour behind master server.</comments>
@@ -1396,9 +1396,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -1430,9 +1430,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -2110,9 +2110,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -2144,9 +2144,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -2688,9 +2688,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -2722,9 +2722,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -2994,9 +2994,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -4524,9 +4524,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -4558,9 +4558,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -4592,9 +4592,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -4626,9 +4626,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -4660,9 +4660,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -4694,9 +4694,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -4728,9 +4728,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -4864,9 +4864,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -4898,9 +4898,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -8332,9 +8332,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -8366,9 +8366,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -8400,9 +8400,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -8434,9 +8434,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -8468,9 +8468,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <trends>90</trends>
           <status>0</status>
           <data_type>0</data_type>
-          <units></units>
+          <units>exec/sec</units>
           <multiplier>0</multiplier>
-          <delta>2</delta>
+          <delta>1</delta>
           <formula>0</formula>
           <lastlogsize>0</lastlogsize>
           <logtimefmt></logtimefmt>
@@ -9295,39 +9295,39 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <percent_left>0.0000</percent_left>
           <percent_right>0.0000</percent_right>
           <graph_elements>
-            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_select -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
-              <sortorder>0</sortorder>
-              <color>AAAA00</color>
-              <yaxisside>0</yaxisside>
-              <calc_fnc>7</calc_fnc>
-              <type>0</type>
-              <periods_cnt>5</periods_cnt>
-            </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Com_insert -P{$MYSQL_PORT}]">
               <drawtype>0</drawtype>
-              <sortorder>1</sortorder>
+              <sortorder>0</sortorder>
               <color>009900</color>
               <yaxisside>0</yaxisside>
-              <calc_fnc>7</calc_fnc>
+              <calc_fnc>4</calc_fnc>
               <type>0</type>
               <periods_cnt>5</periods_cnt>
             </graph_element>
-            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_replace -P{$MYSQL_PORT}]">
+            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_insert_select -P{$MYSQL_PORT}]">
               <drawtype>0</drawtype>
-              <sortorder>2</sortorder>
-              <color>007777</color>
+              <sortorder>1</sortorder>
+              <color>00EE00</color>
               <yaxisside>0</yaxisside>
-              <calc_fnc>7</calc_fnc>
+              <calc_fnc>4</calc_fnc>
               <type>0</type>
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Com_delete -P{$MYSQL_PORT}]">
               <drawtype>0</drawtype>
-              <sortorder>3</sortorder>
+              <sortorder>2</sortorder>
               <color>BB0000</color>
               <yaxisside>0</yaxisside>
-              <calc_fnc>7</calc_fnc>
+              <calc_fnc>4</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_delete_multi -P{$MYSQL_PORT}]">
+              <drawtype>0</drawtype>
+              <sortorder>3</sortorder>
+              <color>FF3333</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>4</calc_fnc>
               <type>0</type>
               <periods_cnt>5</periods_cnt>
             </graph_element>
@@ -9336,7 +9336,123 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <sortorder>4</sortorder>
               <color>AA00AA</color>
               <yaxisside>0</yaxisside>
-              <calc_fnc>7</calc_fnc>
+              <calc_fnc>4</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_update_multi -P{$MYSQL_PORT}]">
+              <drawtype>0</drawtype>
+              <sortorder>5</sortorder>
+              <color>FF33FF</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>4</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_replace -P{$MYSQL_PORT}]">
+              <drawtype>0</drawtype>
+              <sortorder>6</sortorder>
+              <color>007777</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>4</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_replace_select -P{$MYSQL_PORT}]">
+              <drawtype>0</drawtype>
+              <sortorder>7</sortorder>
+              <color>00CCCC</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>4</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_select -P{$MYSQL_PORT}]">
+              <drawtype>0</drawtype>
+              <sortorder>8</sortorder>
+              <color>AAAA00</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>4</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+          </graph_elements>
+        </graph>
+        <graph name="MySQL Prepared Statements" width="900" height="200">
+          <ymin_type>0</ymin_type>
+          <ymax_type>0</ymax_type>
+          <ymin_item_key></ymin_item_key>
+          <ymax_item_key></ymax_item_key>
+          <show_work_period>0</show_work_period>
+          <show_triggers>0</show_triggers>
+          <graphtype>0</graphtype>
+          <yaxismin>0.0000</yaxismin>
+          <yaxismax>100.0000</yaxismax>
+          <show_legend>0</show_legend>
+          <show_3d>0</show_3d>
+          <percent_left>0.0000</percent_left>
+          <percent_right>0.0000</percent_right>
+          <graph_elements>
+            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_stmt_prepare -P{$MYSQL_PORT}]">
+              <drawtype>0</drawtype>
+              <sortorder>0</sortorder>
+              <color>009900</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>4</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_stmt_reprepare -P{$MYSQL_PORT}]">
+              <drawtype>0</drawtype>
+              <sortorder>1</sortorder>
+              <color>00DD00</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>4</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_stmt_send_long_data -P{$MYSQL_PORT}]">
+              <drawtype>0</drawtype>
+              <sortorder>2</sortorder>
+              <color>AA0000</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>4</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_stmt_close -P{$MYSQL_PORT}]">
+              <drawtype>0</drawtype>
+              <sortorder>3</sortorder>
+              <color>990099</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>4</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_stmt_reset -P{$MYSQL_PORT}]">
+              <drawtype>0</drawtype>
+              <sortorder>4</sortorder>
+              <color>FF33FF</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>4</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_stmt_fetch -P{$MYSQL_PORT}]">
+              <drawtype>0</drawtype>
+              <sortorder>5</sortorder>
+              <color>999900</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>4</calc_fnc>
+              <type>0</type>
+              <periods_cnt>5</periods_cnt>
+            </graph_element>
+            <graph_element item="Custom - Service - MySQL:mysql_extend[Com_stmt_execute -P{$MYSQL_PORT}]">
+              <drawtype>0</drawtype>
+              <sortorder>6</sortorder>
+              <color>00AAAA</color>
+              <yaxisside>0</yaxisside>
+              <calc_fnc>4</calc_fnc>
               <type>0</type>
               <periods_cnt>5</periods_cnt>
             </graph_element>

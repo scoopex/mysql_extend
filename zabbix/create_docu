@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for i in *.xml; do 
+   DOCUFILE="${i%%.xml}.html"
+   DOCUFILE="$(echo $DOCUFILE|tr ' ' '_')"
+   xalan -in "$i" -out $DOCUFILE -xsl transform.xsl; 
+done
+
+
