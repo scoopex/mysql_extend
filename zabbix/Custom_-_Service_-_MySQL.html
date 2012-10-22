@@ -1234,7 +1234,8 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
 </td><td><tt>mysql_extend[Key_write_requests -P{$MYSQL_PORT}]</tt></td><td>MySQL Key_write_requests</td><td>300</td><td>31</td><td>90</td>
 </tr>
 <tr>
-<td>&gt;<p class="desc">ERROR - Unknown</p>
+<td>
+<p class="desc">External check</p>
 </td><td><tt>mysql_extend[Last_query_cost -P{$MYSQL_PORT}]</tt></td><td>MySQL Last_query_cost</td><td>300</td><td>31</td><td>90</td>
 </tr>
 <tr>
@@ -1368,7 +1369,8 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
 </td><td><tt>mysql_extend[Select_scan -P{$MYSQL_PORT}]</tt></td><td>MySQL Select_scan</td><td>300</td><td>31</td><td>90</td>
 </tr>
 <tr>
-<td>&gt;<p class="desc">ERROR - Unknown</p>
+<td>
+<p class="desc">External check</p>
 </td><td><tt>mysql_extend[Slave_IO_Running -P{$MYSQL_PORT}]</tt></td><td>MySQL Slave_IO_Running</td><td>300</td><td>31</td><td>365</td>
 </tr>
 <tr>
@@ -1382,11 +1384,13 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
 </td><td><tt>mysql_extend[Slave_retried_transactions -P{$MYSQL_PORT}]</tt></td><td>MySQL Slave_retried_transactions</td><td>300</td><td>31</td><td>90</td>
 </tr>
 <tr>
-<td>&gt;<p class="desc">ERROR - Unknown</p>
+<td>
+<p class="desc">External check</p>
 </td><td><tt>mysql_extend[Slave_running -P{$MYSQL_PORT}]</tt></td><td>MySQL Slave_running</td><td>300</td><td>31</td><td>365</td>
 </tr>
 <tr>
-<td>&gt;<p class="desc">ERROR - Unknown</p>
+<td>
+<p class="desc">External check</p>
 </td><td><tt>mysql_extend[Slave_SQL_Running -P{$MYSQL_PORT}]</tt></td><td>MySQL Slave_SQL_Running</td><td>300</td><td>31</td><td>365</td>
 </tr>
 <tr>
@@ -1466,11 +1470,12 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
 </tr>
 <tr>
 <td>
-<p class="desc">External check</p>
+<p class="desc">Zabbix Agent</p>
 </td><td><tt>vfs.file.exists[{$DB_PART}/FEDERAL_ADMIN_RESERVE_BANK]</tt></td><td>Federal Admin Reserve Bank {$DB_PART}/FEDERAL_ADMIN_RESERVE_BANK</td><td>3600</td><td>14</td><td>0</td>
 </tr>
 <tr>
-<td>&gt;<p class="desc">ERROR - Unknown</p>
+<td>
+<p class="desc">Zabbix Agent</p>
 </td><td><tt>vfs.fs.size[{$DB_PART},pused]</tt></td><td>Disk usage {$DB_PART}</td><td>300</td><td>14</td><td>365</td>
 </tr>
 </table>

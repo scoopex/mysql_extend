@@ -108,8 +108,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:for-each select="zabbix_export/hosts/host/items/item">
     <tr>
       <xsl:choose>
-         <xsl:when test="@value_type='3'"><td><p class="desc">External check</p></td></xsl:when>
-         <xsl:otherwise><xsl:value-of select="state"/><td>><p class="desc">ERROR - Unknown</p></td></xsl:otherwise>
+         <xsl:when test="@type='10'"><td><p class="desc">External check</p></td></xsl:when>
+         <xsl:when test="@type='0'"><td><p class="desc">Zabbix Agent</p></td></xsl:when>
+         <xsl:otherwise><xsl:value-of select="state"/><td><p class="desc">ERROR - Unknown</p></td></xsl:otherwise>
       </xsl:choose>
       <td><tt><xsl:value-of select="@key"/></tt></td>
       <td><xsl:value-of select="description"/></td>
