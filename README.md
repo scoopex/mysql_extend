@@ -71,3 +71,6 @@ The template was created for zabbix release 1.8.
 Just import this template to you zabbix-server, assign hosts to this template and overload the macros of the
 template at host level.
 
+Review file "zabbix/Custom_-_Service_-_MySQL.html" to get detailed information about the behavior of this template.
+(see also: http://htmlpreview.github.com/?https://github.com/digitalmediacenter/mysql_extend/master/zabbix/Custom_-_Service_-_MySQL.html)
+
