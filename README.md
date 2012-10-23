@@ -1,13 +1,13 @@
 mysql_extend
 ============
 
-"MySQL-Monitoring-Proxy" for Zabbix
+"MySQL-Monitoring-Proxy-Tool" for Zabbix
 
 This tool can be utilized to gather behavioral measurement data of MySQL servers in a efficient way. 
 For example it is used as an external check for the zabbix monitoring system.
 The benefit for using this tool is a very low overhead for gathering the measurements.
 
-MySQL Measurements:
+MySQL Measurements and Configuration details:
  * "SHOW GLOBAL VARIABLES"
  * "SHOW GLOBAL STATUS"
  * "SHOW SLAVE STATUS"
@@ -74,3 +74,10 @@ template at host level.
 Review file "zabbix/Custom_-_Service_-_MySQL.html" to get detailed information about the behavior of this template.
 (see also: http://htmlpreview.github.com/?https://github.com/digitalmediacenter/mysql_extend/master/zabbix/Custom_-_Service_-_MySQL.html)
 
+Licence and Authors
+-------------------
+
+Andreas Heil <andreas.heil@dmc.de>
+Marc Schoechlin <marc.schoechlin@dmc.de>
+
+License - see: LICENSE.txt
