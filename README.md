@@ -3,8 +3,8 @@ mysql_extend
 
 "MySQL-Monitoring-Proxy-Tool" for Zabbix
 
-This tool can be utilized to gather behavioral measurement data of MySQL servers in a efficient way. 
-For example it is used as an external check for the zabbix monitoring system.
+This tool can be utilized to gather behavioral measurement data or configuration data of MySQL servers in a efficient way. 
+It can be used as an external check for the zabbix monitoring system.
 The benefit for using this tool is a very low overhead for gathering the measurements.
 
 MySQL Measurements and Configuration details:
@@ -68,8 +68,11 @@ Call the tool with parameters like this:
 
 The directory "zabbix" contains a example zabbix monitoring template which measures and notifies.
 The template was created for zabbix release 1.8.
-Just import this template to you zabbix-server, assign hosts to this template and overload the macros of the
-template at host level.
+
+Installation:
+ * Install "mysql_extend" on the zabbix-server or zabbix-proxy (make install)
+ * Import the zabbix-template to your zabbix-server
+ * Assign hosts to the template and overload the macros of the template at host level.
 
 Review file "zabbix/Custom_-_Service_-_MySQL.html" to get detailed information about the behavior of this template.
 (see also: http://htmlpreview.github.com/?https://github.com/digitalmediacenter/mysql_extend/master/zabbix/Custom_-_Service_-_MySQL.html)
@@ -77,7 +80,9 @@ Review file "zabbix/Custom_-_Service_-_MySQL.html" to get detailed information a
 Licence and Authors
 -------------------
 
-Andreas Heil <andreas.heil@dmc.de>
-Marc Schoechlin <marc.schoechlin@dmc.de>
+Additional authors are very welcome - just submit you patches as pull requests.
+
+ * Andreas Heil <andreas.heil@dmc.de>
+ * Marc Schoechlin <marc.schoechlin@dmc.de>
 
 License - see: LICENSE.txt
