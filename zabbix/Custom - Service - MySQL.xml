@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<zabbix_export version="1.0" date="12.11.12" time="21.23">
+<zabbix_export version="1.0" date="13.11.12" time="21.29">
   <hosts>
     <host name="Custom - Service - MySQL">
       <proxy_hostid>0</proxy_hostid>
@@ -9347,14 +9347,14 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
       </items>
       <templates/>
       <graphs>
-        <graph name="MySQL Bytes sent/received" width="1000" height="200">
+        <graph name="MySQL Bytes sent/received" width="900" height="300">
           <ymin_type>1</ymin_type>
           <ymax_type>0</ymax_type>
           <ymin_item_key></ymin_item_key>
           <ymax_item_key></ymax_item_key>
           <show_work_period>0</show_work_period>
           <show_triggers>0</show_triggers>
-          <graphtype>1</graphtype>
+          <graphtype>0</graphtype>
           <yaxismin>0.0000</yaxismin>
           <yaxismax>100.0000</yaxismax>
           <show_legend>0</show_legend>
@@ -9363,18 +9363,18 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <percent_right>0.0000</percent_right>
           <graph_elements>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Bytes_sent -P{$MYSQL_PORT}]">
-              <drawtype>1</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>0</sortorder>
-              <color>009900</color>
+              <color>00BB00</color>
               <yaxisside>0</yaxisside>
               <calc_fnc>4</calc_fnc>
               <type>0</type>
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Bytes_received -P{$MYSQL_PORT}]">
-              <drawtype>1</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>1</sortorder>
-              <color>0000FF</color>
+              <color>CC00CC</color>
               <yaxisside>0</yaxisside>
               <calc_fnc>4</calc_fnc>
               <type>0</type>
@@ -9382,7 +9382,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
             </graph_element>
           </graph_elements>
         </graph>
-        <graph name="MySQL Statement types" width="900" height="200">
+        <graph name="MySQL Statement types" width="900" height="300">
           <ymin_type>0</ymin_type>
           <ymax_type>0</ymax_type>
           <ymin_item_key></ymin_item_key>
@@ -9398,7 +9398,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <percent_right>0.0000</percent_right>
           <graph_elements>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Com_insert -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>0</sortorder>
               <color>009900</color>
               <yaxisside>0</yaxisside>
@@ -9407,7 +9407,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Com_insert_select -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>1</sortorder>
               <color>00EE00</color>
               <yaxisside>0</yaxisside>
@@ -9416,7 +9416,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Com_delete -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>2</sortorder>
               <color>BB0000</color>
               <yaxisside>0</yaxisside>
@@ -9425,7 +9425,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Com_delete_multi -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>3</sortorder>
               <color>FF3333</color>
               <yaxisside>0</yaxisside>
@@ -9434,7 +9434,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Com_update -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>4</sortorder>
               <color>AA00AA</color>
               <yaxisside>0</yaxisside>
@@ -9443,7 +9443,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Com_update_multi -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>5</sortorder>
               <color>FF33FF</color>
               <yaxisside>0</yaxisside>
@@ -9452,7 +9452,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Com_replace -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>6</sortorder>
               <color>007777</color>
               <yaxisside>0</yaxisside>
@@ -9461,7 +9461,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Com_replace_select -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>7</sortorder>
               <color>00CCCC</color>
               <yaxisside>0</yaxisside>
@@ -9470,7 +9470,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Com_select -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>8</sortorder>
               <color>AAAA00</color>
               <yaxisside>0</yaxisside>
@@ -9480,7 +9480,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
             </graph_element>
           </graph_elements>
         </graph>
-        <graph name="MySQL Prepared Statements" width="900" height="200">
+        <graph name="MySQL Prepared Statements" width="900" height="300">
           <ymin_type>0</ymin_type>
           <ymax_type>0</ymax_type>
           <ymin_item_key></ymin_item_key>
@@ -9560,7 +9560,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
             </graph_element>
           </graph_elements>
         </graph>
-        <graph name="MySQL Connections" width="900" height="200">
+        <graph name="MySQL Connections" width="900" height="300">
           <ymin_type>0</ymin_type>
           <ymax_type>0</ymax_type>
           <ymin_item_key></ymin_item_key>
@@ -9613,7 +9613,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
             </graph_element>
           </graph_elements>
         </graph>
-        <graph name="MySQL Temporary Tables" width="900" height="200">
+        <graph name="MySQL Temporary Tables" width="900" height="300">
           <ymin_type>0</ymin_type>
           <ymax_type>0</ymax_type>
           <ymin_item_key></ymin_item_key>
@@ -9633,7 +9633,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <sortorder>0</sortorder>
               <color>BB0000</color>
               <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
+              <calc_fnc>4</calc_fnc>
               <type>0</type>
               <periods_cnt>5</periods_cnt>
             </graph_element>
@@ -9642,13 +9642,13 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <sortorder>1</sortorder>
               <color>009900</color>
               <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
+              <calc_fnc>4</calc_fnc>
               <type>0</type>
               <periods_cnt>5</periods_cnt>
             </graph_element>
           </graph_elements>
         </graph>
-        <graph name="MySQL InnoDB Buffer Pool Pages" width="900" height="200">
+        <graph name="MySQL InnoDB Buffer Pool Pages" width="900" height="300">
           <ymin_type>0</ymin_type>
           <ymax_type>0</ymax_type>
           <ymin_item_key></ymin_item_key>
@@ -9664,7 +9664,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <percent_right>0.0000</percent_right>
           <graph_elements>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Innodb_buffer_pool_pages_total -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>0</sortorder>
               <color>DD0000</color>
               <yaxisside>0</yaxisside>
@@ -9673,7 +9673,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Innodb_buffer_pool_pages_free -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>1</sortorder>
               <color>009900</color>
               <yaxisside>0</yaxisside>
@@ -9682,7 +9682,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Innodb_buffer_pool_pages_data -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>2</sortorder>
               <color>EEEE00</color>
               <yaxisside>0</yaxisside>
@@ -9691,7 +9691,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Innodb_buffer_pool_pages_misc -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>3</sortorder>
               <color>BB00BB</color>
               <yaxisside>0</yaxisside>
@@ -9700,7 +9700,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Innodb_buffer_pool_pages_dirty -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>5</sortorder>
               <color>00CCCC</color>
               <yaxisside>0</yaxisside>
@@ -9710,7 +9710,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
             </graph_element>
           </graph_elements>
         </graph>
-        <graph name="MySQL Innodb RowLock Times" width="900" height="200">
+        <graph name="MySQL InnoDB RowLock Times" width="900" height="300">
           <ymin_type>0</ymin_type>
           <ymax_type>0</ymax_type>
           <ymin_item_key></ymin_item_key>
@@ -9745,7 +9745,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
             </graph_element>
           </graph_elements>
         </graph>
-        <graph name="MySQL Query Cache Usage" width="900" height="200">
+        <graph name="MySQL Query Cache Usage" width="900" height="300">
           <ymin_type>0</ymin_type>
           <ymax_type>0</ymax_type>
           <ymin_item_key></ymin_item_key>
@@ -9761,7 +9761,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <percent_right>0.0000</percent_right>
           <graph_elements>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Qcache_hits -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>1</sortorder>
               <color>009900</color>
               <yaxisside>0</yaxisside>
@@ -9770,7 +9770,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Qcache_not_cached -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>2</sortorder>
               <color>AA0000</color>
               <yaxisside>0</yaxisside>
@@ -9779,7 +9779,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Qcache_queries_in_cache -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>4</sortorder>
               <color>0000EE</color>
               <yaxisside>0</yaxisside>
@@ -9788,7 +9788,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Qcache_lowmem_prunes -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>5</sortorder>
               <color>999900</color>
               <yaxisside>0</yaxisside>
@@ -9797,7 +9797,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Qcache_inserts -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>6</sortorder>
               <color>009999</color>
               <yaxisside>0</yaxisside>
@@ -9807,7 +9807,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
             </graph_element>
           </graph_elements>
         </graph>
-        <graph name="MySQL Slave behind Master" width="900" height="200">
+        <graph name="MySQL Slave behind Master" width="900" height="300">
           <ymin_type>0</ymin_type>
           <ymax_type>0</ymax_type>
           <ymin_item_key></ymin_item_key>
@@ -9833,14 +9833,14 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
             </graph_element>
           </graph_elements>
         </graph>
-        <graph name="MySQL Select types" width="500" height="400">
+        <graph name="MySQL Select types" width="900" height="300">
           <ymin_type>0</ymin_type>
           <ymax_type>0</ymax_type>
           <ymin_item_key></ymin_item_key>
           <ymax_item_key></ymax_item_key>
           <show_work_period>0</show_work_period>
           <show_triggers>0</show_triggers>
-          <graphtype>1</graphtype>
+          <graphtype>0</graphtype>
           <yaxismin>0.0000</yaxismin>
           <yaxismax>100.0000</yaxismax>
           <show_legend>0</show_legend>
@@ -9849,7 +9849,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <percent_right>0.0000</percent_right>
           <graph_elements>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Select_full_join -P{$MYSQL_PORT}]">
-              <drawtype>1</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>0</sortorder>
               <color>009900</color>
               <yaxisside>0</yaxisside>
@@ -9858,7 +9858,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Select_full_range_join -P{$MYSQL_PORT}]">
-              <drawtype>1</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>1</sortorder>
               <color>000099</color>
               <yaxisside>0</yaxisside>
@@ -9867,7 +9867,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Select_range -P{$MYSQL_PORT}]">
-              <drawtype>1</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>2</sortorder>
               <color>990000</color>
               <yaxisside>0</yaxisside>
@@ -9876,7 +9876,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Select_range_check -P{$MYSQL_PORT}]">
-              <drawtype>1</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>3</sortorder>
               <color>009999</color>
               <yaxisside>0</yaxisside>
@@ -9885,7 +9885,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Select_scan -P{$MYSQL_PORT}]">
-              <drawtype>1</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>4</sortorder>
               <color>990099</color>
               <yaxisside>0</yaxisside>
@@ -9895,7 +9895,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
             </graph_element>
           </graph_elements>
         </graph>
-        <graph name="MySQL Sort Behavior" width="900" height="200">
+        <graph name="MySQL Sort Behavior" width="900" height="300">
           <ymin_type>0</ymin_type>
           <ymax_type>0</ymax_type>
           <ymin_item_key></ymin_item_key>
@@ -9911,7 +9911,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
           <percent_right>0.0000</percent_right>
           <graph_elements>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Sort_scan -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
+              <drawtype>5</drawtype>
               <sortorder>0</sortorder>
               <color>CC0000</color>
               <yaxisside>0</yaxisside>
@@ -9920,8 +9920,8 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Sort_rows -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
-              <sortorder>0</sortorder>
+              <drawtype>5</drawtype>
+              <sortorder>1</sortorder>
               <color>BB00BB</color>
               <yaxisside>0</yaxisside>
               <calc_fnc>4</calc_fnc>
@@ -9929,8 +9929,8 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Sort_range -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
-              <sortorder>1</sortorder>
+              <drawtype>5</drawtype>
+              <sortorder>2</sortorder>
               <color>009900</color>
               <yaxisside>0</yaxisside>
               <calc_fnc>4</calc_fnc>
@@ -9938,9 +9938,9 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <periods_cnt>5</periods_cnt>
             </graph_element>
             <graph_element item="Custom - Service - MySQL:mysql_extend[Sort_merge_passes -P{$MYSQL_PORT}]">
-              <drawtype>0</drawtype>
-              <sortorder>2</sortorder>
-              <color>FFFF33</color>
+              <drawtype>5</drawtype>
+              <sortorder>3</sortorder>
+              <color>3333FF</color>
               <yaxisside>0</yaxisside>
               <calc_fnc>4</calc_fnc>
               <type>0</type>
@@ -9948,7 +9948,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
             </graph_element>
           </graph_elements>
         </graph>
-        <graph name="Database Partition" width="900" height="200">
+        <graph name="Database Partition" width="900" height="300">
           <ymin_type>0</ymin_type>
           <ymax_type>0</ymax_type>
           <ymin_item_key></ymin_item_key>
@@ -9968,7 +9968,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
               <sortorder>0</sortorder>
               <color>009900</color>
               <yaxisside>0</yaxisside>
-              <calc_fnc>2</calc_fnc>
+              <calc_fnc>4</calc_fnc>
               <type>0</type>
               <periods_cnt>5</periods_cnt>
             </graph_element>
