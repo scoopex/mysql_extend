@@ -136,7 +136,7 @@ int main(int argc, char *argv[]) {
 
     /* initialize/update data if needed */
     t = time(NULL) - *(time_t *) shm_ptr;
-    if(!shm_initialized || memcmp(shm_ptr + (SHM_SIZE - sizeof(time_t)), shm_ptr, sizeof(time_t)) || t > SHM_TIMETOLIVE || t < 0) {
+    if(!shm_initialized || memcmp(shm_ptr + (SHM_SIZE - sizeof(time_t)), shm_ptr, sizeof(time_t)) || t > shm_ttl || t < 0) {
         memset(shm_ptr, 0x00, SHM_SIZE);
         time((time_t *) shm_ptr);
         update_stats(shm_ptr + sizeof(time_t), SHM_SIZE - (2 * sizeof(time_t)));
