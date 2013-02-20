@@ -31,10 +31,11 @@ Prerequisites:
  * GNU Make
  * MySQL-Client libraries (dev)
 
-This will install the binary 'mysql_extend' to /etc/zabbix/externalscripts:
+This will install the binary 'mysql_extend' to /usr/local/bin:
 ```
-git clone git://github.com/digitalmediacenter/mysql_extend.git mysql_extend
+git clone git://github.com/digitalmediacenter/mysql_extend.git
 cd mysql_extend
+./configure
 make
 make install
 ```
@@ -63,8 +64,8 @@ Store value........: Delta (simple change)
 
 Call the tool with parameters like this:
 ```
-./mysql_extend -P 3306 -t 2 Binlog_cache_use foo.bar.de
-./mysql_extend --help
+/usr/local/bin/mysql_extend -P 3306 -t 2 Binlog_cache_use foo.bar.de
+/usr/local/bin/mysql_extend --help
 ```
 
 The directory "zabbix" contains a example zabbix monitoring template which measures and notifies.
