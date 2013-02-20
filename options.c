@@ -11,6 +11,10 @@
 #include <limits.h>
 #include <err.h>
 
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
 #include <unistd.h>
 #include <sys/types.h>
 
@@ -54,7 +58,7 @@ void parse_options(int argc, char *const argv[]) {
                 break;
 
             case 1:            /* version */
-                printf("%s v%s\n", progname, MYSQL_EXTEND_VERSION);
+                printf("%s v%s\n", progname, PACKAGE_VERSION);
                 exit(EXIT_SUCCESS);
                 /* NOT REACHED */
 
@@ -144,7 +148,7 @@ static void usage(void) {
 }
 
 static void help(void) {
-    printf("%s v%s\n", progname, MYSQL_EXTEND_VERSION);
+    printf("%s v%s\n", progname, PACKAGE_VERSION);
     puts("Copyright (c) 2011 dmc digital media center GmbH");
     printf("Usage: %s [OPTIONS] <HOST> variable|Status|SPECIAL\n", progname);
     puts("Options:");

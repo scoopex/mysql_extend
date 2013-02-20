@@ -7,9 +7,6 @@
 #ifndef GLOBALS_H
 #define GLOBALS_H
 
-/* version information */
-#define MYSQL_EXTEND_VERSION "1.14"
-
 /* some defaults */
 #define MYSQL_DEFAULT_PORT 3306
 #define MYSQL_DEFAULT_TIMEOUT 5
