@@ -35,6 +35,7 @@ This will install the binary 'mysql_extend' to /usr/local/bin:
 ```
 git clone git://github.com/digitalmediacenter/mysql_extend.git
 cd mysql_extend
+export LDFLAGS="-lrt"
 ./configure
 make
 make install
