@@ -87,6 +87,8 @@ Review file "zabbix/Custom_-_Service_-_MySQL.html" to get detailed information a
 
 ## "SHOW GLOBAL VARIABLES"
 
+http://dev.mysql.com/doc/refman/5.6/en/show-variables.html
+
 All meaurements provided by the statement.
 
 Key: column "Variable_name"
@@ -94,12 +96,16 @@ result: column "Value"
  
 ## "SHOW GLOBAL STATUS"
 
+http://dev.mysql.com/doc/refman/5.6/en/server-status-variables.html
+
 All meaurements provided by the statement.
 
 Key: column "Variable_name"
 result: column "Value"
 
 ## "SHOW SLAVE STATUS"
+
+http://dev.mysql.com/doc/refman/5.6/en/show-slave-status.html
 
 Key: Slave_IO_Running
 result: column "Slave_IO_Running"
@@ -111,6 +117,8 @@ Key: Seconds_Behind_Master
 result: column "Seconds_Behind_Master
 
 ## "SHOW MASTER STATUS"
+
+http://dev.mysql.com/doc/refman/5.6/en/show-master-status.html
 
 Key: Position
 result: column "Position"
