@@ -12,6 +12,7 @@ MySQL Measurements and Configuration details:
  * "SHOW GLOBAL VARIABLES"
  * "SHOW GLOBAL STATUS"
  * "SHOW SLAVE STATUS"
+ * "SHOW MASTER STATUS"
 
 What it does in general:
  * On invocation the tool creates a lock which blocks all other running instances of this tool

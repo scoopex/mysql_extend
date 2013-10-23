@@ -28,6 +28,7 @@ MYSQL mysql;
 static const char _stmt_status[] = SQL_STMT_STATUS;
 static const char _stmt_variables[] = SQL_STMT_VARIABLES;
 static const char _stmt_slavestatus[] = SQL_STMT_SLAVESTATUS;
+static const char _stmt_masterstatus[] = SQL_STMT_MASTERSTATUS;
 
 static char *append_str(char *dst, const char *src, size_t len, size_t * bytes_left);
 
@@ -101,6 +102,30 @@ void update_stats(char *buffer, size_t buflen) {
         }
     }
     mysql_free_result(result);
+
+    /* get the master status */
+    if(mysql_real_query(&mysql, _stmt_masterstatus, sizeof(_stmt_masterstatus) - 1))
+        errx(EXIT_FAILURE, "%s - Host = %s:%u, User = %s", mysql_error(&mysql), db_hostname, db_port, db_user);
+    if((result = mysql_store_result(&mysql)) == NULL)
+        errx(EXIT_FAILURE, "%s - Host = %s:%u, User = %s", mysql_error(&mysql), db_hostname, db_port, db_user);
+
+    while((row = mysql_fetch_row(result))) {
+        unsigned long *lengths;
+        unsigned int num_fields;
+        unsigned int i;
+        MYSQL_FIELD *fields;
+        lengths = mysql_fetch_lengths(result);
+        num_fields = mysql_num_fields(result);
+        fields = mysql_fetch_fields(result);
+        for(i = 0; i < num_fields; ++i) {
+            if(!strncmp("Position", fields[i].name, 16)) {
+                ptr = append_str(ptr, fields[i].name, strlen(fields[i].name), &bytes_left);
+                ptr = append_str(ptr, row[i], lengths[i], &bytes_left);
+            }
+        }
+    }
+    mysql_free_result(result);
+
 
     mysql_close(&mysql);
 }

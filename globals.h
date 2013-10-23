@@ -23,6 +23,7 @@
 #define SQL_STMT_STATUS "SHOW GLOBAL STATUS"
 /* Fields needed: Slave_IO_Running,Slave_SQL_Running,Seconds_Behind_Master */
 #define SQL_STMT_SLAVESTATUS "SHOW SLAVE STATUS"
+#define SQL_STMT_MASTERSTATUS "SHOW MASTER STATUS"
 
 #ifndef FALSE
 #define FALSE 0
