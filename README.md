@@ -25,12 +25,14 @@ What it does in general:
    * If no results are available the old results remain in the shared memory segment
  * End of program flow, release the lock to allow other instances of the tool to continue their work
 
-Compile and Install
--------------------
-Prerequisites:
+# Compile and Install
+
+## Prerequisites:
  * C-compiler
  * GNU Make
  * MySQL-Client libraries (dev)
+
+## Installation
 
 This will install the binary 'mysql_extend' to /usr/local/bin:
 ```
@@ -42,7 +44,7 @@ make
 make install
 ```
 
-Configure
+## Configure
 ---------
 create a .my.cnf in the zabbix-user's home:
 ```
@@ -51,8 +53,8 @@ user = zabbix
 password = somegoodpassword
 ```
 
-Usage
------
+# Usage
+
 Configure items like this in zabbix:
 ```
 Description........: MySQL Com_alter_function
@@ -81,8 +83,40 @@ Installation:
 Review file "zabbix/Custom_-_Service_-_MySQL.html" to get detailed information about the behavior of this template.
 (see also: http://htmlpreview.github.com/?https://github.com/digitalmediacenter/mysql_extend/master/zabbix/Custom_-_Service_-_MySQL.html)
 
-Licence and Authors
--------------------
+# Measurement details
+
+## "SHOW GLOBAL VARIABLES"
+
+All meaurements provided by the statement.
+
+Key: column "Variable_name"
+result: column "Value"
+ 
+## "SHOW GLOBAL STATUS"
+
+All meaurements provided by the statement.
+
+Key: column "Variable_name"
+result: column "Value"
+
+## "SHOW SLAVE STATUS"
+
+Key: Slave_IO_Running
+result: column "Slave_IO_Running"
+
+Key: Slave_SQL_Running
+result: column "Slave_SQL_Running
+
+Key: Seconds_Behind_Master
+result: column "Seconds_Behind_Master
+
+## "SHOW MASTER STATUS"
+
+Key: Position
+result: column "Position"
+
+# Licence and Authors
+
 
 Additional authors are very welcome - just submit you patches as pull requests.
 
