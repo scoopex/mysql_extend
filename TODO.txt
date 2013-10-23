@@ -2,3 +2,4 @@
  - add a --list option which shows all available variables whit their values
  - shrink main() by moving IPC code in separate files
  - create a "cleanup" method/binary/something to remove very old shared memory segments and lockfiles
+ - add parsing for "show engine innodb status"
