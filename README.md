@@ -82,7 +82,7 @@ Installation:
  * Assign hosts to the template and overload the macros of the template at host level.
 
 Review file "zabbix/Custom_-_Service_-_MySQL.html" to get detailed information about the behavior of this template.
-(see also: http://htmlpreview.github.com/?https://github.com/digitalmediacenter/mysql_extend/master/zabbix/Custom_-_Service_-_MySQL.html)
+[see also](http://htmlpreview.github.io/?https://github.com/digitalmediacenter/mysql_extend/blob/master/zabbix/Custom_-_Service_-_MySQL.html)
 
 # Measurement details
 
