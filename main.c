@@ -97,19 +97,21 @@ int main(int argc, char *argv[]) {
     if(shm_fd < 0) {
         /* got none, maybe error */
         if(errno != ENOENT) {
-            /* error condition */
-            err(EXIT_FAILURE, "Could not open shared memory object");
+            /* error condition, todo: get path from system */
+            err(EXIT_FAILURE, "Could not open shared memory object: /dev/shm%s", shm_name);
         }
 
         /* object did not exist, so create one */
         shm_fd = shm_open(shm_name, O_RDWR | O_CREAT | O_EXCL, S_IRUSR | S_IWUSR);
         if(shm_fd < 0) {
-            err(EXIT_FAILURE, "Could not create shared memory object");
+            /* error condition, todo: get path from system */
+            err(EXIT_FAILURE, "Could not create shared memory object: /dev/shm%s", shm_name);
         }
 
         /* set size */
         if(ftruncate(shm_fd, SHM_SIZE) < 0) {
-            err(EXIT_FAILURE, "Could not set size of shared memory object");
+            /* error condition, todo: get path from system */
+            err(EXIT_FAILURE, "Could not set size of shared memory object: /dev/shm%s", shm_name);
         }
 
         /* shm is not initialized here */
