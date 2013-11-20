@@ -45,6 +45,10 @@ make
 make install
 ```
 
+## Bugs
+
+- TODO: fix mysql 5.6/mariadb 5.5. problems which "SHOW GLOBAL VARIABLES"
+
 ## Configure
 ---------
 create a .my.cnf in the zabbix-user's home:
