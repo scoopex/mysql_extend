@@ -76,6 +76,15 @@ void update_stats(char *buffer, size_t buflen) {
     while((row = mysql_fetch_row(result))) {
         unsigned long *lengths;
         lengths = mysql_fetch_lengths(result);
+
+        /* 
+         * BUG: for some reason, this value seems to be broken : length[1] not seems to be ok or a \0 byte 
+         * seems to break the key/value order
+         */
+        if(!strncmp("optimizer_switch", row[0], lengths[0])){
+           // printf("WARNING: %i\n",lengths[1]);
+           continue;
+        }
         ptr = append_str(ptr, row[0], lengths[0], &bytes_left);
         ptr = append_str(ptr, row[1], lengths[1], &bytes_left);
     }

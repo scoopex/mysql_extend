@@ -48,6 +48,8 @@ make install
 ## Bugs
 
 - TODO: fix mysql 5.6/mariadb 5.5. problems which "SHOW GLOBAL VARIABLES"
+  After "optimizer_switch" output seems to be broken.
+  (see sql.c => search for "optimizer_switch")
 
 ## Configure
 ---------
