@@ -55,12 +55,16 @@ make install
 ---------
 
 * create a database user
-```
+
+  ```
 grant usage, replication client on *.* to monitor@'%' identified by 'somegoodpassword';
 FLUSH privileges;
 ```
+
 * create a .my.cnf in the zabbix-user's home:
-```
+
+
+  ```
 [mysql_extend]
 user = zabbix
 password = somegoodpassword
