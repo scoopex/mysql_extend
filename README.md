@@ -66,7 +66,7 @@ FLUSH privileges;
 
   ```
 [mysql_extend]
-user = zabbix
+user = monitor
 password = somegoodpassword
 ```
 
