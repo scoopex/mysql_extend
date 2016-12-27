@@ -32,10 +32,11 @@ What it does in general:
  * GNU Make
  * MySQL-Client libraries (dev)
 
-## Installation
+## Build and Installation
 
 This will install the binary 'mysql_extend' to /usr/local/bin:
 ```
+sudo apt-get install autoconf automake libmysqlclient-dev
 git clone git@github.com:breuninger-ecom/mysql_extend.git
 cd mysql_extend
 export CC="gcc-4.4" # alternative compiler, i.e. on Ubuntu 13.10
