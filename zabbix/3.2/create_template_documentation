@@ -1,10 +1,10 @@
 #!/bin/bash
 
 
-rm -rf docu
-mkdir docu
+rm -rf documentation
+mkdir documentation
 
-cat > docu/index.html <<'EOF'
+cat > documentation/index.html <<'EOF'
 <script type="text/javascript">
 <!--//
 function goToPage763(mySelect){
@@ -28,14 +28,13 @@ Template:
 EOF
 
 for i in Custom*.xml; do 
-   DOCUFILE="docu/${i%%.xml}.html"
+   DOCUFILE="documentation/${i%%.xml}.html"
    DOCUFILE="$(echo $DOCUFILE|tr ' ' '_')"
    xalan -in "$i" -out $DOCUFILE -xsl transform.xsl; 
-   echo "<option value=\"$(echo ${i%%.xml}|tr ' ' '_').html\"> ${i%%.xml}</option>" >> docu/index.html
+   echo "<option value=\"$(echo ${i%%.xml}|tr ' ' '_').html\"> ${i%%.xml}</option>" >> documentation/index.html
 done
 
-
-cat >> docu/index.html <<'EOF'
+cat >> documentation/index.html <<'EOF'
 </select>
 
 
@@ -46,13 +45,13 @@ cat >> docu/index.html <<'EOF'
 <iframe name="iframe2" src="start.html" align="top" height="90%" width="99%" hspace="10" vspace="10" align="left">
 If you can see this, your browser does not support iframes!
 </iframe>
-<a href="http://www.zabbix.com/documentation/1.8/manual/config/items" target="_new">Zabbix Manual: Items </a></BR>
-<a href="http://www.zabbix.com/documentation/1.8/manual/config/triggers" target="_new">Zabbix Manual: Triggers </a>
+<a href="http://www.zabbix.com/documentation/3.2/manual/config/items" target="_new">Zabbix Manual: Items </a></BR>
+<a href="http://www.zabbix.com/documentation/3.2/manual/config/triggers" target="_new">Zabbix Manual: Triggers </a>
 </p>
 </form>
 EOF
 
 
-cat > docu/start.html <<'EOF'
+cat > documentation/start.html <<'EOF'
  Please select a template...
 EOF

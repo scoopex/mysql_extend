@@ -42,9 +42,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <th>Name</th>
       <th>Default</th>
     </tr>
-    <xsl:for-each select="zabbix_export/hosts/host/macros/macro">
+    <xsl:for-each select="zabbix_export/templates/template/macros/macro">
     <tr>
-      <td><xsl:value-of select="name"/></td>
+      <td><xsl:value-of select="macro"/></td>
       <td><xsl:value-of select="value"/></td>
     </tr>
     </xsl:for-each>
@@ -55,25 +55,31 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <h2>Trigger Overview</h2>
   <table class="pretty">
     <tr>
+      <th>Name</th>
       <th>Description</th>
       <th>Priority</th>
       <th>Expression</th>
-      <th>Comment</th>
+      <th>Dependencies</th>
     </tr>
-    <xsl:for-each select="zabbix_export/hosts/host/triggers/trigger">
+    <xsl:for-each select="zabbix_export/triggers/trigger">
     <tr>
+      <td><xsl:value-of select="name"/></td>
       <td><xsl:value-of select="description"/></td>
       <xsl:choose>
-         <xsl:when test="priority='0'"><td style="background-color:#efefef;">Not classified (No alarm)</td></xsl:when>
-         <xsl:when test="priority='1'"><td style="background-color:#FFFF00;">Information (Jabber)</td></xsl:when>
-         <xsl:when test="priority='2'"><td style="background-color:#FFFF00;">Warning (Jabber)</td></xsl:when>
-         <xsl:when test="priority='3'"><td style="background-color:#FF0000;">Average (SMS + Jabber)</td></xsl:when>
-         <xsl:when test="priority='4'"><td style="background-color:#FF0000;">High (SMS +  Jabber)</td></xsl:when>
-         <xsl:when test="priority='5'"><td style="background-color:#FF0000;">Disaster (SMS + Jabber></td></xsl:when>
+         <xsl:when test="priority='0'"><td style="background-color:#efefef;">Not classified</td></xsl:when>
+         <xsl:when test="priority='1'"><td style="background-color:#FFFF00;">Information</td></xsl:when>
+         <xsl:when test="priority='2'"><td style="background-color:#FFFF00;">Warning</td></xsl:when>
+         <xsl:when test="priority='3'"><td style="background-color:#FF0000;">Average</td></xsl:when>
+         <xsl:when test="priority='4'"><td style="background-color:#FF0000;">High</td></xsl:when>
+         <xsl:when test="priority='5'"><td style="background-color:#FF0000;">Disaster</td></xsl:when>
          <xsl:otherwise><xsl:value-of select="priority"/><td>ERROR - Unknown</td></xsl:otherwise>
       </xsl:choose>
       <td><tt><xsl:value-of select="expression"/></tt></td>
-      <td><tt><xsl:value-of select="comments"/></tt></td>
+      <td><tt>
+      <xsl:for-each select="dependencies/dependency">
+         <xsl:value-of select="name"/><br></br>
+      </xsl:for-each>
+      </tt></td>
     </tr>
     </xsl:for-each>
   </table>
@@ -82,13 +88,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <table class="pretty">
     <tr>
       <th>Name</th>
-      <th>Element</th>
+      <th>Elements</th>
     </tr>
-    <xsl:for-each select="zabbix_export/hosts/host/graphs/graph">
+    <xsl:for-each select="zabbix_export/graphs/graph">
     <tr>
-      <td><xsl:value-of select="@name"/></td>
-      <td><tt><xsl:for-each select="graph_elements/graph_element">
-         <xsl:value-of select="@item"/><br/>
+      <td><xsl:value-of select="name"/></td>
+      <td><tt><xsl:for-each select="graph_items/graph_item">
+         <xsl:value-of select="item/key"/><br/>
       </xsl:for-each></tt></td>
     </tr>
     </xsl:for-each>
@@ -99,19 +105,21 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <table class="pretty">
     <tr>
       <th>Type</th>
+      <th>Name</th>
       <th>Key</th>
       <th>Description</th>
       <th>Interval (sec)</th>
       <th>History Days</th>
       <th>Trend Days</th>
     </tr>
-    <xsl:for-each select="zabbix_export/hosts/host/items/item">
+    <xsl:for-each select="zabbix_export/templates/template/items/item">
     <tr>
       <xsl:choose>
-         <xsl:when test="@value_type='3'"><td><p class="desc">External check</p></td></xsl:when>
-         <xsl:otherwise><xsl:value-of select="state"/><td>><p class="desc">ERROR - Unknown</p></td></xsl:otherwise>
+         <xsl:when test="type='10'"><td><p class="desc">External check</p></td></xsl:when>
+         <xsl:otherwise><xsl:value-of select="state"/><td><p class="desc">ERROR - Unknown</p></td></xsl:otherwise>
       </xsl:choose>
-      <td><tt><xsl:value-of select="@key"/></tt></td>
+      <td><xsl:value-of select="name"/></td>
+      <td><tt><xsl:value-of select="key"/></tt></td>
       <td><xsl:value-of select="description"/></td>
       <td><xsl:value-of select="delay"/></td>
       <td><xsl:value-of select="history"/></td>

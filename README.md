@@ -36,9 +36,9 @@ What it does in general:
 
 This will install the binary 'mysql_extend' to /usr/local/bin:
 ```
-git clone git://github.com/digitalmediacenter/mysql_extend.git
+git clone git@github.com:breuninger-ecom/mysql_extend.git
 cd mysql_extend
-export CC="gcc-4.4" # i.e. on Ubuntu 13.10
+export CC="gcc-4.4" # alternative compiler, i.e. on Ubuntu 13.10
 export LDFLAGS="-lrt"
 ./configure
 make
@@ -90,7 +90,6 @@ Call the tool with parameters like this:
 ```
 
 The directory "zabbix" contains a example zabbix monitoring template which measures and notifies.
-The template was created for zabbix release 1.8.
 
 Installation:
  * Install "mysql_extend" on the zabbix-server or zabbix-proxy (make install)
@@ -106,7 +105,7 @@ Review file "zabbix/Custom_-_Service_-_MySQL.html" to get detailed information a
 
 http://dev.mysql.com/doc/refman/5.6/en/show-variables.html
 
-All meaurements provided by the statement.
+All measurements provided by the statement.
 
 Key: column "Variable_name"
 result: column "Value"
@@ -115,7 +114,7 @@ result: column "Value"
 
 http://dev.mysql.com/doc/refman/5.6/en/server-status-variables.html
 
-All meaurements provided by the statement.
+All measurements provided by the statement.
 
 Key: column "Variable_name"
 result: column "Value"
@@ -146,6 +145,8 @@ result: column "Position"
 Additional authors are very welcome - just submit you patches as pull requests.
 
  * Andreas Heil <andreas.heil@dmc.de>
- * Marc Schoechlin <marc.schoechlin@dmc.de>
+ * Marc Schoechlin <ms@256bit.org>
+ * Marc Schoechlin <marc.schoechlin@breuninger.de>
+ * Marc Schoechlin <marc.schoechlin@breuninger.de>
 
 License - see: LICENSE.txt
