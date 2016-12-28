@@ -41,14 +41,14 @@ git clone git@github.com:breuninger-ecom/mysql_extend.git
 cd mysql_extend
 export CC="gcc-4.4" # alternative compiler, i.e. on Ubuntu 13.10
 export LDFLAGS="-lrt"
-./configure
+./configure --bindir=/etc/zabbix/externalscripts/ # Installdir of tool
 make
 make install
 ```
 
 ## Bugs
 
-- TODO: fix mysql 5.6/mariadb 5.5. problems which "SHOW GLOBAL VARIABLES"
+- fix mysql 5.6/mariadb 5.5. problems which "SHOW GLOBAL VARIABLES"
   After "optimizer_switch" output seems to be broken.
   (see sql.c => search for "optimizer_switch")
 

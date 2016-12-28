@@ -149,7 +149,6 @@ static void usage(void) {
 
 static void help(void) {
     printf("%s v%s\n", progname, PACKAGE_VERSION);
-    puts("Copyright (c) 2011 dmc digital media center GmbH");
     printf("Usage: %s [OPTIONS] <HOST> variable|Status|SPECIAL\n", progname);
     puts("Options:");
     puts("  -c, --config=name   Name of an extra my.cnf file to read.");
