@@ -37,7 +37,7 @@ What it does in general:
 This will install the binary 'mysql_extend' to /usr/local/bin:
 ```
 sudo apt-get install autoconf automake libmysqlclient-dev
-git clone git@github.com:breuninger-ecom/mysql_extend.git
+git clone https://github.com/scoopex/mysql_extend.git
 cd mysql_extend
 export CC="gcc-4.4" # alternative compiler, i.e. on Ubuntu 13.10
 export LDFLAGS="-lrt"
@@ -63,13 +63,22 @@ FLUSH privileges;
 ```
 
 * create a .my.cnf in the zabbix-user's home:
-
-
   ```
+chsh -s /bin/bash zabbix
+su - zabbix
+cat > ~zabbix/.my.cnf <<EOF
 [mysql_extend]
 user = monitor
 password = somegoodpassword
+EOF
 ```
+
+* test
+  ```
+  /etc/zabbix/externalscripts/mysql_extend 127.0.0.1 innodb_buffer_pool_size
+  chsh -s /usr/sbin/nologin zabbix
+  ```
+* Load and assign template from zabbix/<release>
 
 # Usage
 
