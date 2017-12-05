@@ -76,7 +76,6 @@ EOF
 * test
   ```
   /etc/zabbix/externalscripts/mysql_extend 127.0.0.1 innodb_buffer_pool_size
-  chsh -s /usr/sbin/nologin zabbix
   ```
 * Load and assign template from zabbix/<release>
 
