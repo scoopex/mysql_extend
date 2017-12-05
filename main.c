@@ -186,6 +186,7 @@ int main(int argc, char *argv[]) {
             fputs(v, stdout);
         }
     }
+    fputs("\n", stdout);
 
     /* unmap */
     munmap(shm_ptr, SHM_SIZE);
