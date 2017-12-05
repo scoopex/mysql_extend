@@ -32,7 +32,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Aborted_clients -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Aborted_clients,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -75,7 +75,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Aborted_connects -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Aborted_connects,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -118,7 +118,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Binlog_cache_disk_use -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Binlog_cache_disk_use,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -161,7 +161,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Binlog_cache_use -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Binlog_cache_use,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -204,7 +204,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Bytes_received -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Bytes_received,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -247,7 +247,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Bytes_sent -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Bytes_sent,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -290,7 +290,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_admin_commands -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_admin_commands,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -333,7 +333,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_alter_db -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_alter_db,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -376,7 +376,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_alter_db_upgrade -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_alter_db_upgrade,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -419,7 +419,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_alter_event -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_alter_event,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -462,7 +462,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_alter_function -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_alter_function,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -505,7 +505,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_alter_procedure -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_alter_procedure,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -548,7 +548,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_alter_server -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_alter_server,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -591,7 +591,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_alter_table -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_alter_table,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -634,7 +634,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_alter_tablespace -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_alter_tablespace,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -677,7 +677,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_analyze -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_analyze,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -720,7 +720,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_assign_to_keycache -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_assign_to_keycache,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -763,7 +763,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_backup_table -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_backup_table,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -806,7 +806,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_begin -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_begin,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -849,7 +849,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_binlog -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_binlog,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -892,7 +892,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_call_procedure -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_call_procedure,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -935,7 +935,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_change_db -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_change_db,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -978,7 +978,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_change_master -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_change_master,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1021,7 +1021,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_check -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_check,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1064,7 +1064,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_checksum -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_checksum,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1107,7 +1107,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_commit -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_commit,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1150,7 +1150,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_create_db -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_create_db,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1193,7 +1193,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_create_event -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_create_event,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1236,7 +1236,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_create_function -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_create_function,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1279,7 +1279,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_create_index -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_create_index,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1322,7 +1322,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_create_procedure -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_create_procedure,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1365,7 +1365,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_create_server -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_create_server,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1408,7 +1408,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_create_table -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_create_table,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1451,7 +1451,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_create_trigger -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_create_trigger,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1494,7 +1494,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_create_udf -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_create_udf,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1537,7 +1537,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_create_user -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_create_user,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1580,7 +1580,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_create_view -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_create_view,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1623,7 +1623,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_dealloc_sql -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_dealloc_sql,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1666,7 +1666,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_delete -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_delete,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1709,7 +1709,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_delete_multi -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_delete_multi,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1752,7 +1752,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_do -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_do,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1795,7 +1795,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_drop_db -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_drop_db,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1838,7 +1838,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_drop_event -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_drop_event,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1881,7 +1881,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_drop_function -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_drop_function,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1924,7 +1924,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_drop_index -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_drop_index,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -1967,7 +1967,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_drop_procedure -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_drop_procedure,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2010,7 +2010,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_drop_server -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_drop_server,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2053,7 +2053,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_drop_table -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_drop_table,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2096,7 +2096,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_drop_trigger -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_drop_trigger,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2139,7 +2139,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_drop_user -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_drop_user,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2182,7 +2182,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_drop_view -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_drop_view,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2225,7 +2225,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_empty_query -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_empty_query,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2268,7 +2268,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_execute_sql -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_execute_sql,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2311,7 +2311,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_flush -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_flush,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2354,7 +2354,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_grant -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_grant,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2397,7 +2397,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_ha_close -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_ha_close,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2440,7 +2440,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_ha_open -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_ha_open,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2483,7 +2483,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_ha_read -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_ha_read,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2526,7 +2526,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_help -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_help,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2569,7 +2569,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_insert -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_insert,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2612,7 +2612,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_insert_select -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_insert_select,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2655,7 +2655,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_install_plugin -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_install_plugin,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2698,7 +2698,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_kill -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_kill,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2741,7 +2741,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_load -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_load,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2784,7 +2784,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_load_master_data -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_load_master_data,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2827,7 +2827,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_load_master_table -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_load_master_table,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2870,7 +2870,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_lock_tables -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_lock_tables,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2913,7 +2913,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_optimize -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_optimize,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2956,7 +2956,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_preload_keys -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_preload_keys,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -2999,7 +2999,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_prepare_sql -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_prepare_sql,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3042,7 +3042,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_purge -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_purge,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3085,7 +3085,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_purge_before_date -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_purge_before_date,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3128,7 +3128,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_release_savepoint -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_release_savepoint,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3171,7 +3171,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_rename_table -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_rename_table,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3214,7 +3214,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_rename_user -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_rename_user,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3257,7 +3257,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_repair -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_repair,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3300,7 +3300,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_replace -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_replace,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3343,7 +3343,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_replace_select -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_replace_select,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3386,7 +3386,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_reset -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_reset,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3429,7 +3429,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_restore_table -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_restore_table,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3472,7 +3472,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_revoke -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_revoke,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3515,7 +3515,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_revoke_all -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_revoke_all,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3558,7 +3558,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_rollback -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_rollback,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3601,7 +3601,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_rollback_to_savepoint -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_rollback_to_savepoint,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3644,7 +3644,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_savepoint -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_savepoint,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3687,7 +3687,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_select -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_select,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3730,7 +3730,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_set_option -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_set_option,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3773,7 +3773,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_authors -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_authors,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3816,7 +3816,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_binlogs -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_binlogs,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3859,7 +3859,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_binlog_events -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_binlog_events,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3902,7 +3902,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_charsets -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_charsets,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3945,7 +3945,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_collations -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_collations,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -3988,7 +3988,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_column_types -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_column_types,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4031,7 +4031,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_contributors -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_contributors,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4074,7 +4074,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_create_db -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_create_db,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4117,7 +4117,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_create_event -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_create_event,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4160,7 +4160,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_create_func -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_create_func,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4203,7 +4203,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_create_proc -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_create_proc,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4246,7 +4246,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_create_table -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_create_table,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4289,7 +4289,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_create_trigger -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_create_trigger,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4332,7 +4332,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_databases -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_databases,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4375,7 +4375,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_engine_logs -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_engine_logs,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4418,7 +4418,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_engine_mutex -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_engine_mutex,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4461,7 +4461,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_engine_status -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_engine_status,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4504,7 +4504,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_errors -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_errors,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4547,7 +4547,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_events -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_events,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4590,7 +4590,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_fields -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_fields,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4633,7 +4633,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_function_status -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_function_status,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4676,7 +4676,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_grants -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_grants,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4719,7 +4719,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_keys -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_keys,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4762,7 +4762,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_master_status -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_master_status,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4805,7 +4805,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_new_master -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_new_master,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4848,7 +4848,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_open_tables -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_open_tables,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4891,7 +4891,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_plugins -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_plugins,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4934,7 +4934,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_privileges -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_privileges,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -4977,7 +4977,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_procedure_status -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_procedure_status,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5020,7 +5020,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_processlist -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_processlist,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5063,7 +5063,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_profile -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_profile,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5106,7 +5106,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_profiles -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_profiles,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5149,7 +5149,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_slave_hosts -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_slave_hosts,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5192,7 +5192,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_slave_status -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_slave_status,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5235,7 +5235,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_status -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_status,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5278,7 +5278,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_storage_engines -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_storage_engines,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5321,7 +5321,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_tables -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_tables,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5364,7 +5364,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_table_status -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_table_status,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5407,7 +5407,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_triggers -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_triggers,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5450,7 +5450,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_variables -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_variables,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5493,7 +5493,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_show_warnings -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_show_warnings,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5536,7 +5536,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_slave_start -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_slave_start,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5579,7 +5579,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_slave_stop -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_slave_stop,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5622,7 +5622,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_stmt_close -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_stmt_close,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5665,7 +5665,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_stmt_execute -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_stmt_execute,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5708,7 +5708,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_stmt_fetch -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_stmt_fetch,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5751,7 +5751,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_stmt_prepare -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_stmt_prepare,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5794,7 +5794,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_stmt_reprepare -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_stmt_reprepare,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5837,7 +5837,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_stmt_reset -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_stmt_reset,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5880,7 +5880,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_stmt_send_long_data -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_stmt_send_long_data,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5923,7 +5923,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_truncate -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_truncate,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -5966,7 +5966,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_uninstall_plugin -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_uninstall_plugin,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6009,7 +6009,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_unlock_tables -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_unlock_tables,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6052,7 +6052,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_update -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_update,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6095,7 +6095,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_update_multi -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_update_multi,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6138,7 +6138,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_xa_commit -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_xa_commit,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6181,7 +6181,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_xa_end -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_xa_end,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6224,7 +6224,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_xa_prepare -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_xa_prepare,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6267,7 +6267,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_xa_recover -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_xa_recover,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6310,7 +6310,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_xa_rollback -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_xa_rollback,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6353,7 +6353,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Com_xa_start -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Com_xa_start,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6396,7 +6396,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Connections -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Connections,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6439,7 +6439,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Created_tmp_disk_tables -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Created_tmp_disk_tables,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6482,7 +6482,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Created_tmp_files -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Created_tmp_files,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6525,7 +6525,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Created_tmp_tables -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Created_tmp_tables,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6568,7 +6568,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Delayed_insert_threads -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Delayed_insert_threads,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6611,7 +6611,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Delayed_writes -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Delayed_writes,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6654,7 +6654,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Flush_commands -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Flush_commands,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6697,7 +6697,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_commit -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_commit,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6740,7 +6740,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_delete -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_delete,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6783,7 +6783,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_discover -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_discover,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6826,7 +6826,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_prepare -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_prepare,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6869,7 +6869,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_read_first -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_read_first,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6912,7 +6912,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_read_key -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_read_key,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6955,7 +6955,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_read_next -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_read_next,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -6998,7 +6998,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_read_prev -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_read_prev,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7041,7 +7041,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_read_rnd -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_read_rnd,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7084,7 +7084,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_read_rnd_next -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_read_rnd_next,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7127,7 +7127,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_rollback -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_rollback,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7170,7 +7170,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_savepoint -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_savepoint,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7213,7 +7213,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_savepoint_rollback -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_savepoint_rollback,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7256,7 +7256,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_update -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_update,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7299,7 +7299,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Handler_write -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Handler_write,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7342,7 +7342,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_buffer_pool_pages_data -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_pages_data,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7385,7 +7385,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_buffer_pool_pages_dirty -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_pages_dirty,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7428,7 +7428,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_buffer_pool_pages_flushed -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_pages_flushed,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7471,7 +7471,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_buffer_pool_pages_free -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_pages_free,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7514,7 +7514,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_buffer_pool_pages_misc -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_pages_misc,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7557,7 +7557,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_buffer_pool_pages_total -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_pages_total,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7600,7 +7600,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_buffer_pool_reads -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_reads,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7643,7 +7643,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_buffer_pool_read_ahead -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_read_ahead,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7686,7 +7686,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_buffer_pool_read_ahead_evicted -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_read_ahead_evicted,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7729,7 +7729,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_buffer_pool_read_requests -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_read_requests,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7772,7 +7772,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[innodb_buffer_pool_size -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",innodb_buffer_pool_size,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7815,7 +7815,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_buffer_pool_wait_free -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_wait_free,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7858,7 +7858,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_buffer_pool_write_requests -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_write_requests,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7901,7 +7901,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_data_fsyncs -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_data_fsyncs,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7944,7 +7944,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_data_pending_fsyncs -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_data_pending_fsyncs,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -7987,7 +7987,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_data_pending_reads -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_data_pending_reads,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8030,7 +8030,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_data_pending_writes -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_data_pending_writes,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8073,7 +8073,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_data_read -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_data_read,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8116,7 +8116,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_data_reads -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_data_reads,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8159,7 +8159,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_data_writes -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_data_writes,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8202,7 +8202,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_data_written -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_data_written,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8245,7 +8245,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_dblwr_pages_written -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_dblwr_pages_written,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8288,7 +8288,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_dblwr_writes -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_dblwr_writes,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8331,7 +8331,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_log_waits -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_log_waits,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8374,7 +8374,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_log_writes -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_log_writes,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8417,7 +8417,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_log_write_requests -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_log_write_requests,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8460,7 +8460,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_os_log_fsyncs -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_os_log_fsyncs,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8503,7 +8503,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_os_log_pending_fsyncs -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_os_log_pending_fsyncs,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8546,7 +8546,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_os_log_pending_writes -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_os_log_pending_writes,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8589,7 +8589,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_os_log_written -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_os_log_written,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8632,7 +8632,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_pages_created -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_pages_created,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8675,7 +8675,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_pages_read -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_pages_read,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8718,7 +8718,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_pages_written -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_pages_written,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8761,7 +8761,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_page_size -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_page_size,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8804,7 +8804,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_rows_deleted -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_rows_deleted,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8847,7 +8847,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_rows_inserted -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_rows_inserted,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8890,7 +8890,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_rows_read -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_rows_read,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8933,7 +8933,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_rows_updated -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_rows_updated,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -8976,7 +8976,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_row_lock_current_waits -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_row_lock_current_waits,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9019,7 +9019,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_row_lock_time -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_row_lock_time,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9062,7 +9062,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_row_lock_time_avg -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_row_lock_time_avg,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9105,7 +9105,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_row_lock_time_max -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_row_lock_time_max,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9148,7 +9148,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Innodb_row_lock_waits -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Innodb_row_lock_waits,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9191,7 +9191,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Key_blocks_not_flushed -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Key_blocks_not_flushed,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9234,7 +9234,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Key_blocks_unused -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Key_blocks_unused,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9277,7 +9277,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Key_blocks_used -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Key_blocks_used,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9320,7 +9320,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Key_reads -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Key_reads,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9363,7 +9363,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Key_read_requests -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Key_read_requests,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9406,7 +9406,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Key_writes -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Key_writes,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9449,7 +9449,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Key_write_requests -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Key_write_requests,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9492,7 +9492,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Last_query_cost -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Last_query_cost,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9535,7 +9535,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[MAXMEMORY -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",MAXMEMORY,-P,{$MYSQL_PORT}]</key>
                     <delay>3600</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9578,7 +9578,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[max_connections -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",max_connections,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9621,7 +9621,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Max_used_connections -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Max_used_connections,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9664,7 +9664,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Not_flushed_delayed_rows -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Not_flushed_delayed_rows,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9707,7 +9707,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Opened_files -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Opened_files,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9750,7 +9750,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Opened_tables -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Opened_tables,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9793,7 +9793,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Opened_table_definitions -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Opened_table_definitions,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9836,7 +9836,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Open_files -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Open_files,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9879,7 +9879,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Open_streams -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Open_streams,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9922,7 +9922,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Open_tables -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Open_tables,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -9965,7 +9965,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Open_table_definitions -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Open_table_definitions,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10008,7 +10008,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Prepared_stmt_count -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Prepared_stmt_count,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10051,7 +10051,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[QCACHEHITRATE -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",QCACHEHITRATE,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10094,7 +10094,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Qcache_free_blocks -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Qcache_free_blocks,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10137,7 +10137,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Qcache_free_memory -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Qcache_free_memory,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10180,7 +10180,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Qcache_hits -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Qcache_hits,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10223,7 +10223,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Qcache_inserts -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Qcache_inserts,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10266,7 +10266,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Qcache_lowmem_prunes -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Qcache_lowmem_prunes,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10309,7 +10309,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Qcache_not_cached -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Qcache_not_cached,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10352,7 +10352,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Qcache_queries_in_cache -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Qcache_queries_in_cache,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10395,7 +10395,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Qcache_total_blocks -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Qcache_total_blocks,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10438,7 +10438,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Queries -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Queries,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10481,7 +10481,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Seconds_Behind_Master -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Seconds_Behind_Master,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10524,7 +10524,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Select_full_join -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Select_full_join,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10567,7 +10567,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Select_full_range_join -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Select_full_range_join,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10610,7 +10610,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Select_range -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Select_range,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10653,7 +10653,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Select_range_check -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Select_range_check,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10696,7 +10696,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Select_scan -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Select_scan,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10739,7 +10739,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Slave_IO_Running -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Slave_IO_Running,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>0</trends>
@@ -10782,7 +10782,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Slave_open_temp_tables -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Slave_open_temp_tables,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10825,7 +10825,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Slave_retried_transactions -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Slave_retried_transactions,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10868,7 +10868,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Slave_running -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Slave_running,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>0</trends>
@@ -10911,7 +10911,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Slave_SQL_Running -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Slave_SQL_Running,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>0</trends>
@@ -10954,7 +10954,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Slow_launch_threads -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Slow_launch_threads,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -10997,7 +10997,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Slow_queries -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Slow_queries,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11040,7 +11040,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Sort_merge_passes -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Sort_merge_passes,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11083,7 +11083,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Sort_range -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Sort_range,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11126,7 +11126,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Sort_rows -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Sort_rows,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11169,7 +11169,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Sort_scan -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Sort_scan,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11212,7 +11212,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Table_locks_immediate -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Table_locks_immediate,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11255,7 +11255,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Table_locks_waited -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Table_locks_waited,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11298,7 +11298,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Tc_log_max_pages_used -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Tc_log_max_pages_used,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11341,7 +11341,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Tc_log_page_size -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Tc_log_page_size,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11384,7 +11384,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Tc_log_page_waits -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Tc_log_page_waits,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11427,7 +11427,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Threads_cached -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Threads_cached,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11470,7 +11470,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Threads_connected -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Threads_connected,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11513,7 +11513,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Threads_created -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Threads_created,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11556,7 +11556,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Threads_running -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Threads_running,-P,{$MYSQL_PORT}]</key>
                     <delay>300</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11599,7 +11599,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>mysql_extend[Uptime -P{$MYSQL_PORT}]</key>
+                    <key>mysql_extend["{HOST.CONN}",Uptime,-P,{$MYSQL_PORT}]</key>
                     <delay>120</delay>
                     <history>31</history>
                     <trends>90</trends>
@@ -11775,7 +11775,7 @@ Typically create a file using the following command: dd if=/dev/zero of={$DB_PAR
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Custom - Service - MySQL:mysql_extend[Uptime -P{$MYSQL_PORT}].nodata(300)}=1 or {Custom - Service - MySQL:mysql_extend[Uptime -P{$MYSQL_PORT}].diff()}=0</expression>
+            <expression>{Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Uptime,-P,{$MYSQL_PORT}].nodata(300)}=1 or {Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Uptime,-P,{$MYSQL_PORT}].diff()}=0</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>MySQL Service - Check Service Available</name>
@@ -11792,7 +11792,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Custom - Service - MySQL:mysql_extend[Threads_running -P{$MYSQL_PORT}].last(0)}&gt;( {Custom - Service - MySQL:mysql_extend[max_connections -P{$MYSQL_PORT}].last(0)} * 0.90)</expression>
+            <expression>{Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Threads_running,-P,{$MYSQL_PORT}].last(0)}&gt;( {Custom - Service - MySQL:mysql_extend["{HOST.CONN}",max_connections,-P,{$MYSQL_PORT}].last(0)} * 0.90)</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>MySQL Service - Connections</name>
@@ -11807,14 +11807,14 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
             <dependencies>
                 <dependency>
                     <name>MySQL Service - Check Service Available</name>
-                    <expression>{Custom - Service - MySQL:mysql_extend[Uptime -P{$MYSQL_PORT}].nodata(300)}=1 or {Custom - Service - MySQL:mysql_extend[Uptime -P{$MYSQL_PORT}].diff()}=0</expression>
+                    <expression>{Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Uptime,-P,{$MYSQL_PORT}].nodata(300)}=1 or {Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Uptime,-P,{$MYSQL_PORT}].diff()}=0</expression>
                     <recovery_expression/>
                 </dependency>
             </dependencies>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Custom - Service - MySQL:mysql_extend[Slave_IO_Running -P{$MYSQL_PORT}].str(&quot;No&quot;)}=1</expression>
+            <expression>{Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Slave_IO_Running,-P,{$MYSQL_PORT}].str(&quot;No&quot;)}=1</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>MySQL Service - Slave IO Running</name>
@@ -11829,14 +11829,14 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
             <dependencies>
                 <dependency>
                     <name>MySQL Service - Check Service Available</name>
-                    <expression>{Custom - Service - MySQL:mysql_extend[Uptime -P{$MYSQL_PORT}].nodata(300)}=1 or {Custom - Service - MySQL:mysql_extend[Uptime -P{$MYSQL_PORT}].diff()}=0</expression>
+                    <expression>{Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Uptime,-P,{$MYSQL_PORT}].nodata(300)}=1 or {Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Uptime,-P,{$MYSQL_PORT}].diff()}=0</expression>
                     <recovery_expression/>
                 </dependency>
             </dependencies>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Custom - Service - MySQL:mysql_extend[Seconds_Behind_Master -P{$MYSQL_PORT}].last(0)}&gt;3200</expression>
+            <expression>{Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Seconds_Behind_Master,-P,{$MYSQL_PORT}].last(0)}&gt;3200</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>MySQL Service - Slave Seconds behind master (1h)</name>
@@ -11851,19 +11851,19 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
             <dependencies>
                 <dependency>
                     <name>MySQL Service - Check Service Available</name>
-                    <expression>{Custom - Service - MySQL:mysql_extend[Uptime -P{$MYSQL_PORT}].nodata(300)}=1 or {Custom - Service - MySQL:mysql_extend[Uptime -P{$MYSQL_PORT}].diff()}=0</expression>
+                    <expression>{Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Uptime,-P,{$MYSQL_PORT}].nodata(300)}=1 or {Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Uptime,-P,{$MYSQL_PORT}].diff()}=0</expression>
                     <recovery_expression/>
                 </dependency>
                 <dependency>
                     <name>MySQL Service - Slave Seconds behind master (3h)</name>
-                    <expression>{Custom - Service - MySQL:mysql_extend[Seconds_Behind_Master -P{$MYSQL_PORT}].last(0)}&gt;10800</expression>
+                    <expression>{Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Seconds_Behind_Master,-P,{$MYSQL_PORT}].last(0)}&gt;10800</expression>
                     <recovery_expression/>
                 </dependency>
             </dependencies>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Custom - Service - MySQL:mysql_extend[Seconds_Behind_Master -P{$MYSQL_PORT}].last(0)}&gt;10800</expression>
+            <expression>{Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Seconds_Behind_Master,-P,{$MYSQL_PORT}].last(0)}&gt;10800</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>MySQL Service - Slave Seconds behind master (3h)</name>
@@ -11878,14 +11878,14 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
             <dependencies>
                 <dependency>
                     <name>MySQL Service - Check Service Available</name>
-                    <expression>{Custom - Service - MySQL:mysql_extend[Uptime -P{$MYSQL_PORT}].nodata(300)}=1 or {Custom - Service - MySQL:mysql_extend[Uptime -P{$MYSQL_PORT}].diff()}=0</expression>
+                    <expression>{Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Uptime,-P,{$MYSQL_PORT}].nodata(300)}=1 or {Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Uptime,-P,{$MYSQL_PORT}].diff()}=0</expression>
                     <recovery_expression/>
                 </dependency>
             </dependencies>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Custom - Service - MySQL:mysql_extend[Slave_SQL_Running -P{$MYSQL_PORT}].str(&quot;No&quot;)}=1</expression>
+            <expression>{Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Slave_SQL_Running,-P,{$MYSQL_PORT}].str(&quot;No&quot;)}=1</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>MySQL Service - Slave SQL thread stopped</name>
@@ -11900,7 +11900,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
             <dependencies>
                 <dependency>
                     <name>MySQL Service - Check Service Available</name>
-                    <expression>{Custom - Service - MySQL:mysql_extend[Uptime -P{$MYSQL_PORT}].nodata(300)}=1 or {Custom - Service - MySQL:mysql_extend[Uptime -P{$MYSQL_PORT}].diff()}=0</expression>
+                    <expression>{Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Uptime,-P,{$MYSQL_PORT}].nodata(300)}=1 or {Custom - Service - MySQL:mysql_extend["{HOST.CONN}",Uptime,-P,{$MYSQL_PORT}].diff()}=0</expression>
                     <recovery_expression/>
                 </dependency>
             </dependencies>
@@ -11967,7 +11967,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Bytes_sent -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Bytes_sent,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -11979,7 +11979,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Bytes_received -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Bytes_received,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -12011,7 +12011,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Connections -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Connections,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12023,7 +12023,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Threads_running -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Threads_running,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12035,7 +12035,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[max_connections -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",max_connections,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12047,7 +12047,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Max_used_connections -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Max_used_connections,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -12079,7 +12079,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Innodb_buffer_pool_pages_total -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_pages_total,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12091,7 +12091,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Innodb_buffer_pool_pages_free -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_pages_free,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12103,7 +12103,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Innodb_buffer_pool_pages_data -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_pages_data,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12115,7 +12115,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Innodb_buffer_pool_pages_misc -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_pages_misc,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12127,7 +12127,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Innodb_buffer_pool_pages_dirty -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Innodb_buffer_pool_pages_dirty,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -12159,7 +12159,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Innodb_row_lock_time -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Innodb_row_lock_time,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12171,7 +12171,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Innodb_row_lock_time_avg -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Innodb_row_lock_time_avg,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -12203,7 +12203,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_stmt_prepare -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_stmt_prepare,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12215,7 +12215,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_stmt_reprepare -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_stmt_reprepare,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12227,7 +12227,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_stmt_send_long_data -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_stmt_send_long_data,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12239,7 +12239,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_stmt_close -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_stmt_close,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12251,7 +12251,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_stmt_reset -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_stmt_reset,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12263,7 +12263,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_stmt_fetch -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_stmt_fetch,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12275,7 +12275,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_stmt_execute -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_stmt_execute,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -12307,7 +12307,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Qcache_hits -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Qcache_hits,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12319,7 +12319,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Qcache_not_cached -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Qcache_not_cached,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12331,7 +12331,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Qcache_queries_in_cache -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Qcache_queries_in_cache,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12343,7 +12343,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Qcache_lowmem_prunes -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Qcache_lowmem_prunes,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12355,7 +12355,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Qcache_inserts -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Qcache_inserts,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -12387,7 +12387,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Select_full_join -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Select_full_join,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12399,7 +12399,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Select_full_range_join -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Select_full_range_join,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12411,7 +12411,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Select_range -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Select_range,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12423,7 +12423,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Select_range_check -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Select_range_check,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12435,7 +12435,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Select_scan -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Select_scan,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -12467,7 +12467,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Seconds_Behind_Master -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Seconds_Behind_Master,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -12499,7 +12499,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Sort_scan -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Sort_scan,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12511,7 +12511,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Sort_rows -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Sort_rows,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12523,7 +12523,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Sort_range -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Sort_range,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12535,7 +12535,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Sort_merge_passes -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Sort_merge_passes,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -12567,7 +12567,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_insert -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_insert,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12579,7 +12579,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_insert_select -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_insert_select,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12591,7 +12591,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_delete -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_delete,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12603,7 +12603,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_delete_multi -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_delete_multi,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12615,7 +12615,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_update -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_update,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12627,7 +12627,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_update_multi -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_update_multi,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12639,7 +12639,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_replace -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_replace,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12651,7 +12651,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_replace_select -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_replace_select,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12663,7 +12663,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Com_select -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Com_select,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -12695,7 +12695,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Created_tmp_disk_tables -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Created_tmp_disk_tables,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -12707,7 +12707,7 @@ Raises a alert if does not provide a measue for 300 seconds or the uptime does n
                     <type>0</type>
                     <item>
                         <host>Custom - Service - MySQL</host>
-                        <key>mysql_extend[Created_tmp_tables -P{$MYSQL_PORT}]</key>
+                        <key>mysql_extend["{HOST.CONN}",Created_tmp_tables,-P,{$MYSQL_PORT}]</key>
                     </item>
                 </graph_item>
             </graph_items>
