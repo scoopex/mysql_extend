@@ -40,7 +40,7 @@ sudo apt-get install autoconf automake libmysqlclient-dev
 git clone https://github.com/scoopex/mysql_extend.git
 cd mysql_extend
 export CC="gcc-4.4" # alternative compiler, i.e. on Ubuntu 13.10
-export LDFLAGS="-lrt"
+export LDFLAGS="-lrt" 
 ./configure --bindir=/etc/zabbix/externalscripts/ # Installdir of tool
 make
 make install
@@ -64,18 +64,18 @@ FLUSH privileges;
 
 * create a .my.cnf in the zabbix-user's home:
   ```
-chsh -s /bin/bash zabbix
-su - zabbix
-cat > ~zabbix/.my.cnf <<EOF
-[mysql_extend]
+cat > /etc/zabbix/item_zabbix_mysql_extend.cnf <<EOF
+[global]
 user = monitor
 password = somegoodpassword
 EOF
+chmod 600 /etc/zabbix/item_zabbix_mysql_extend.cnf
+chown zabbix:zabbix /etc/zabbix/item_zabbix_mysql_extend.cnf
 ```
 
 * test
   ```
-  /etc/zabbix/externalscripts/mysql_extend 127.0.0.1 innodb_buffer_pool_size
+  /etc/zabbix/externalscripts/mysql_extend 127.0.0.1 innodb_buffer_pool_size --config /etc/zabbix/item_zabbix_mysql_extend.cnf
   ```
 * Load and assign template from zabbix/<release>
 
@@ -94,8 +94,8 @@ Store value........: Delta (simple change)
 
 Call the tool with parameters like this:
 ```
-/usr/local/bin/mysql_extend -P 3306 -t 2 Binlog_cache_use foo.bar.de
-/usr/local/bin/mysql_extend --help
+/etc/zabbix/externalscripts/mysql_extend --help
+/etc/zabbix/externalscripts/mysql_extend -P 3306 -t 2 Binlog_cache_use foo.bar.de -c --config /etc/zabbix/item_zabbix_mysql_extend.cnf
 ```
 
 The directory "zabbix" contains a example zabbix monitoring template which measures and notifies.
@@ -103,10 +103,16 @@ The directory "zabbix" contains a example zabbix monitoring template which measu
 Installation:
  * Install "mysql_extend" on the zabbix-server or zabbix-proxy (make install)
  * Import the zabbix-template to your zabbix-server
- * Assign hosts to the template and overload the macros of the template at host level.
+ * Select DNS or IP as hostconnection at the configured host<BR>
+   (The template utilizes the {HOST.CONN} macro to connect to the database)
+ * Assign hosts to the template and overload the macros of the template at host level
+    * {$DB_PART}
+    * {$MYSQL_EXTEND_CONFIG}
+    * {$MYSQL_EXTEND_CONFIG_SECTION}
+    * {$MYSQL_PORT}
 
 Review file "zabbix/Custom_-_Service_-_MySQL.html" to get detailed information about the behavior of this template.
-[see also](http://htmlpreview.github.io/?https://github.com/digitalmediacenter/mysql_extend/blob/master/zabbix/Custom_-_Service_-_MySQL.html)
+[see also](http://htmlpreview.github.io/?https://github.com/scoopex/mysql_extend/blob/master/zabbix/Custom_-_Service_-_MySQL.html)
 
 # Measurement details
 
