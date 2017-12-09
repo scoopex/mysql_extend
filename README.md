@@ -3,6 +3,8 @@ mysql_extend
 
 "MySQL-Monitoring-Proxy-Tool" for Zabbix
 
+CI: https://travis-ci.org/scoopex/mysql_extend/
+
 This tool can be utilized to gather behavioral measurement data or configuration data of MySQL servers in a efficient way. 
 It can be used as an external check for the zabbix monitoring system.
 The benefit for using this tool is a very low overhead for gathering the measurements because this tool is written in c and uses
