@@ -1,0 +1,103 @@
+#!/bin/bash
+
+
+######################################################################
+
+VERSION="${1:-$(git describe --abbrev=0 --tags)}"
+
+######################################################################
+### HELPERS
+
+prepare(){
+
+	echo "***************************************************************************************************************************************"
+	echo "PREPARE"
+   set -e
+   set -x
+	umask 0002
+   mkdir -p /usr/bin/
+	mkdir -p -m 755 ${TMPDIR}/usr/bin/ ${TMPDIR}/etc/zabbix/
+   cp mysql_extend ${TMPDIR}/usr/bin/zabbix_mysql_extend
+   echo '[global]' > ${TMPDIR}/etc/zabbix/item_zabbix_mysql_extend.cnf
+   echo 'user = monitor' >> ${TMPDIR}/etc/zabbix/item_zabbix_mysql_extend.cnf
+   echo 'password = mypassword' >> ${TMPDIR}/etc/zabbix/item_zabbix_mysql_extend.cnf
+	chmod 755 ${TMPDIR}/usr/bin/*
+	chmod 600 ${TMPDIR}/etc/zabbix/item_zabbix_mysql_extend.cnf
+   mkdir -p -m 755 ${TMPDIR}/usr/share/zabbix-mysql-extend/
+   cp -rv zabbix/* ${TMPDIR}/usr/share/zabbix-mysql-extend/
+	chmod -R 755 ${TMPDIR}/usr/share/zabbix-mysql-extend/
+   find ${TMPDIR}/usr/share/zabbix-mysql-extend/ -type f -exec chmod 644 {} \;
+   set +x
+   set +e
+ 
+}
+
+create_package(){
+	TYPE="$1"
+   echo "***************************************************************************************************************************************"
+   echo "PACKAGE TYPE: $TYPE"
+   echo
+   set -x
+   fpm --verbose -s dir -t $TYPE \
+		-n zabbix-mysql-extend \
+      --license GPLv2 \
+      -a all \
+	   --deb-no-default-config-files \
+      --deb-group root \
+      --deb-user root \
+      --rpm-group root \
+      --rpm-user root \
+      -m "Marc Schoechlin <ms-zabbix_mysql_extend@256bit.org>" \
+      --url "https://github.com/scoopex/mysql_extend" \
+      -C $TMPDIR \
+      -v $VERSION
+   set +x
+
+   if [ "$TYPE" = "deb" ];then
+   	dpkg -c zabbix-mysql-extend_*.deb
+      RET="$?"
+   elif [ "$TYPE" = "rpm" ];then
+      rpm -qlp zabbix-mysql-extend*.rpm
+      RET="$?"
+   fi
+   if [ "$RET" != "0" ];then
+       echo "ERROR: error on creation of $TYPE package"
+       exit 1
+   fi
+}
+
+create_docu(){
+ cd $SDIR/zabbix/3.4
+ ./create_template_documentation
+}
+
+######################################################################
+### MAIN
+if [ -z "$1" ];then
+  echo "$0 <version>"
+fi
+
+SDIR="$(dirname $(readlink -f $0))/"
+
+for P in $HOME/.gem/ruby/*/bin/fpm;do
+   P="$(dirname $P)"
+   export PATH="$P:$PATH"
+done
+
+if ( ! (type -a fpm >/dev/null 2>&1 ) );then
+   echo "Unable to find 'fpm'"
+   exit 100
+fi
+
+echo "CREATING VERSION: $VERSION"
+rm -rf zabbix-mysql-extend_*.deb zabbix-mysql-extend*.rpm
+
+TMPDIR="$(mktemp -d)"
+trap "rm -rf $TMPDIR" EXIT TERM INT
+
+prepare
+create_package deb
+create_package rpm
+create_docu
+
+exit 0
