@@ -9,6 +9,7 @@ before_install:
 script:
 - set -e
 - gem install fpm
+- export LDFLAGS="-lrt"
 - ./configure --bindir=/etc/zabbix/externalscripts/
 - make
 - ./create_packages
