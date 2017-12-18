@@ -6,7 +6,7 @@ env:
 before_install:
 - sudo apt-get update
 #- sudo apt-get upgrade
-- sudo apt-get install ruby-dev build-essential debhelper devscripts rpm wget libc6-dev gem -y
+- sudo apt-get install ruby-dev build-essential debhelper devscripts rpm wget libc6-dev git ruby ruby-dev -y
 - sudo apt-get install autoconf automake libmysqlclient-dev xalan libc6-dev make gcc -y
 script:
 - set -e
