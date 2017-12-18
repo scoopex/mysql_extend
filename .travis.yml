@@ -1,5 +1,5 @@
 language: c
-dist: trusty
+dist: xenial
 sudo: required
 env:
   - LDFLAGS="-lrt"
@@ -7,7 +7,7 @@ before_install:
 - sudo apt-get update
 #- sudo apt-get upgrade
 - sudo apt-get install ruby-dev build-essential debhelper devscripts rpm wget libc6-dev -y
-- sudo apt-get install autoconf automake libmysqlclient-dev xalan -y
+- sudo apt-get install autoconf automake libmysqlclient-dev xalan libc6-dev make gcc -y
 script:
 - set -e
 - gem install fpm

@@ -38,7 +38,7 @@ What it does in general:
 
 This will install the binary 'mysql_extend' to /usr/local/bin:
 ```
-sudo apt-get install autoconf automake libmysqlclient-dev xalan
+sudo apt-get install autoconf automake libmysqlclient-dev make gcc xalan -y
 git clone https://github.com/scoopex/mysql_extend.git
 cd mysql_extend
 export CC="gcc-4.4" # alternative compiler, i.e. on Ubuntu 13.10
