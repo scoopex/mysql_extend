@@ -3,7 +3,6 @@ mysql_extend
 
 "MySQL-Monitoring-Proxy-Tool" for Zabbix
 
-CI: https://travis-ci.org/scoopex/mysql_extend/
 
 This tool can be utilized to gather behavioral measurement data or configuration data of MySQL servers in a efficient way. 
 It can be used as an external check for the zabbix monitoring system.
@@ -26,6 +25,12 @@ What it does in general:
    * The results are stored in the shared memory segment (if there are any) with the timestamp of the fetch
    * If no results are available the old results remain in the shared memory segment
  * End of program flow, release the lock to allow other instances of the tool to continue their work
+
+
+Details:
+ * CI: https://travis-ci.org/scoopex/mysql_extend/
+ * [Documentation](http://htmlpreview.github.io/?https://github.com/scoopex/mysql_extend/blob/master/zabbix/3.4/documentation/Custom_-_Service_-_MySQL.html)
+
 
 # Compile and Install
 
