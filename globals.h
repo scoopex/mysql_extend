@@ -14,6 +14,7 @@
 /* size of shared memory segment */
 /* #define SHM_SIZE 32768 */
 #define SHM_SIZE 65536
+#define VALUE_MAXLENGTH 200
 
 /* time to live in seconds for shared memory segment */
 #define SHM_TIMETOLIVE 60
@@ -52,6 +53,7 @@ extern char *db_config;         /* name of an extra my.cnf file to read */
 extern char *db_section;        /* name of a section in any my.cnf to read */
 extern unsigned short db_port;  /* mysql port */
 extern unsigned int db_timeout; /* login timeout */
+extern unsigned int char_maxlength; /* login timeout */
 extern unsigned int shm_ttl;    /* shared memory ttl */
 
 /* misc */

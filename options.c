@@ -27,6 +27,7 @@ char *db_config = NULL;
 char *db_section = NULL;
 unsigned short db_port = MYSQL_DEFAULT_PORT;
 unsigned int db_timeout = MYSQL_DEFAULT_TIMEOUT;
+unsigned int char_maxlength = VALUE_MAXLENGTH;
 unsigned int shm_ttl = SHM_TIMETOLIVE;
 char *request = NULL;
 char *shm_name = NULL;
@@ -42,6 +43,7 @@ static struct option longopts[] = {
     {"port", required_argument, NULL, 'P'},
     {"section", required_argument, NULL, 's'},
     {"timeout", required_argument, NULL, 't'},
+    {"length", required_argument, NULL, 'l'},
     {"maxttl", required_argument, NULL, 'm'},
     {"user", required_argument, NULL, 'u'},
     {"version", no_argument, NULL, 1},
@@ -52,7 +54,7 @@ void parse_options(int argc, char *const argv[]) {
     int ch;
     size_t len;
 
-    while((ch = getopt_long(argc, argv, "c:hp:P:s:t:m:u:", longopts, NULL)) != -1) {
+    while((ch = getopt_long(argc, argv, "c:hp:P:s:t:l:m:u:i", longopts, NULL)) != -1) {
         switch (ch) {
             case 0:
                 break;
@@ -95,6 +97,11 @@ void parse_options(int argc, char *const argv[]) {
             case 't':          /* timeout */
                 db_timeout = strtoul(optarg, NULL, 10);
                 break;
+
+            case 'l':          /* max length */
+                char_maxlength = strtoul(optarg, NULL, 10);
+                break;
+
 
             case 'm':          /* shared memory ttl */
                 shm_ttl = strtoul(optarg, NULL, 10);
@@ -160,6 +167,7 @@ static void help(void) {
     puts("  -s, --section=name  Section to read for login credentials. (my.cnf)");
     printf("  -t, --timeout=#     Timeout in seconds for login. (default: %d sec)\n", MYSQL_DEFAULT_TIMEOUT);
     printf("  -m, --maxttl=#     Max lifetime of cached values. (default: %d sec)\n", SHM_TIMETOLIVE);
+    printf("  -l, --length=#     Max character length of values. (default: %d chars)\n", VALUE_MAXLENGTH);
     puts("  -u, --user=name     User for login if not current user.");
     puts("      --version       Display version information an exit.");
     puts("Arguments:");

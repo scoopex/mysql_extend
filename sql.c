@@ -63,6 +63,11 @@ void update_stats(char *buffer, size_t buflen) {
     while((row = mysql_fetch_row(result))) {
         unsigned long *lengths;
         lengths = mysql_fetch_lengths(result);
+
+        // skip too long results
+        if (lengths[1] > char_maxlength){
+            continue;
+        }
         ptr = append_str(ptr, row[0], lengths[0], &bytes_left);
         ptr = append_str(ptr, row[1], lengths[1], &bytes_left);
     }
